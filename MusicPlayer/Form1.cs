@@ -14,7 +14,7 @@ namespace MusicPlayer
             var musicDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyMusic);
             openFileDialog.InitialDirectory = musicDirectory;
             openFileDialog.Filter = "Music Files(*.mp3;*.wav ;*.wma;*.asf;*.mp4;*.mpg;*.mpa;*.zpl)|*.mp3;*.wav;*.wma;*.asf;*.mp4;*.mpg ;*.mpa;*.zpl";
-            openFileDialog.Multiselect = true;
+            openFileDialog.Multiselect = false;
             openFileDialog.Title = "Choose a music";
             openFileDialog.RestoreDirectory = false;
         }
